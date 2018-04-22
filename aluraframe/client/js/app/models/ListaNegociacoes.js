@@ -1,16 +1,13 @@
 class ListaNegociacoes {
 
-    constructor(contexto, capturador) {
+    constructor() {
 
         this._negociacoes = [];
-        this._capturador = capturador;
-        this._contexto = contexto;
     }
 
     adiciona(negociacao) {
 
         this._negociacoes.push(negociacao);
-        Reflect.apply(this._capturador, this._contexto, [this]);
     }
 
     get negociacoes() {
@@ -21,6 +18,5 @@ class ListaNegociacoes {
     esvazia() {
 
         this._negociacoes = [];
-        Reflect.apply(this._capturador, this._contexto, [this]);
     }
 }
