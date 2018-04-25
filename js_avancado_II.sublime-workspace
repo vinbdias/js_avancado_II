@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"Error",
-				"Error(message)"
+				"Ne",
+				"Negociacao"
+			],
+			[
+				"ne",
+				"negociacoesView\t(index.html)"
+			],
+			[
+				"Mens",
+				"Mensagem.js\t(index.html)"
 			],
 			[
 				"_mensa",
-				"_mensagem"
+				"_mensagemView"
+			],
+			[
+				"Proxy",
+				"ProxyFactory"
+			],
+			[
+				"Prox",
+				"ProxyFactory\t(ProxyFactory.js)"
+			],
+			[
+				"Error",
+				"Error(message)"
 			],
 			[
 				"M",
@@ -142,6 +162,15 @@
 	],
 	"file_history":
 	[
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/views/View.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/models/ListaNegociacoes.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/services/ProxyFactory.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/helpers/Bind.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/models/Negociacao.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/controllers/NegociacaoController.js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/views/NegociacoesView.js",
+		"/C/alura/js_avancado_II/aluraframe/client/index.html",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/models/Mensagem.js",
 		"/C/alura/js_avancado_I/javascript-avancado-i-aula1/aluraframe/client/js/app/controllers/NegociacaoController.js",
 		"/C/xampp/php/php.ini",
 		"/C/Users/VinBDias/AppData/Roaming/Sublime Text 3/Packages/Laravel 5 Artisan/Laravel 5 Artisan.sublime-settings",
@@ -198,6 +227,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"                    \n",
+			");            \t           ",
+			"view",
 			"crypt"
 		],
 		"highlight": true,
@@ -252,6 +284,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
