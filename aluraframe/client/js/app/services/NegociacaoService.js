@@ -1,80 +1,78 @@
 class NegociacaoService {
 
-	obterNegociacoesDaSemana(callback) {
+	constructor() {
 
-        let xhr = new XMLHttpRequest(callback);
-
-        xhr.open('GET', 'negociacoes/semana');           
-
-        xhr.onreadystatechange = () => {
-
-            if(xhr.readyState == 4) {
-
-                if(xhr.status == 200) {
-                    
-                    callback(null, JSON.parse(xhr.responseText)
-                        .map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
-                }
-                else {
-                    
-                    console.log(xhr.responseText);
-                    callback('Não foi possível obter as negociações da semana.');
-                }
-            }
-        };
-
-        xhr.send();		
+		this._http = new HttpService();
 	}
 
-	obterNegociacoesDaSemanaAnterior(callback) {
+	obterNegociacoes() {
 
-        let xhr = new XMLHttpRequest(callback);
+	    return Promise.all([
+		        this.obterNegociacoesDaSemana(),
+		        this.obterNegociacoesDaSemanaAnterior(),
+		        this.obterNegociacoesDaSemanaRetrasada()]
+		    ).then(periodos => {
 
-        xhr.open('GET', 'negociacoes/anterior');           
-
-        xhr.onreadystatechange = () => {
-
-            if(xhr.readyState == 4) {
-
-                if(xhr.status == 200) {
-                    
-                    callback(null, JSON.parse(xhr.responseText)
-                        .map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
-                }
-                else {
-                    
-                    console.log(xhr.responseText);
-                    callback('Não foi possível obter as negociações da semana anterior.');
-                }
-            }
-        };
-
-        xhr.send();		
+		        let negociacoes = periodos
+			            .reduce((dados, periodo) => dados.concat(periodo), []);
+		        return negociacoes;
+		    })
+		    .catch(erro => {
+		    	throw new Error(erro)
+		    });      		
 	}	
 
-	obterNegociacoesDaSemanaRetrasada(callback) {
+	obterNegociacoesDaSemana() {
 
-        let xhr = new XMLHttpRequest(callback);
+		return new Promise((resolve, reject) => {
 
-        xhr.open('GET', 'negociacoes/retrasada');           
+			this._http
+			.get('negociacoes/semana')
+			.then(negociacoes => {
 
-        xhr.onreadystatechange = () => {
+				resolve(negociacoes.map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
+			})
+			.catch(erro => {
 
-            if(xhr.readyState == 4) {
+				console.log(erro);
+				reject('Não foi possível obter as negociações da semana.');
+			});				
+		});
+	}
 
-                if(xhr.status == 200) {
-                    
-                    callback(null, JSON.parse(xhr.responseText)
-                        .map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
-                }
-                else {
-                    
-                    console.log(xhr.responseText);
-                    callback('Não foi possível obter as negociações da semana retrasada.');
-                }
-            }
-        };
+	obterNegociacoesDaSemanaAnterior() {
 
-        xhr.send();		
+		return new Promise((resolve, reject) => {
+
+			this._http
+			.get('negociacoes/anterior')
+			.then(negociacoes => {
+
+				resolve(negociacoes.map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
+			})
+			.catch(erro => {
+
+				console.log(erro);
+				reject('Não foi possível obter as negociações da semana anterior.');
+			});				
+		});
+	}	
+
+	obterNegociacoesDaSemanaRetrasada() {
+
+		return new Promise((resolve, reject) => {
+
+			this._http
+			.get('negociacoes/retrasada')
+			.then(negociacoes => {
+
+				resolve(negociacoes.map(objeto => new Negociacao(new Date(objeto.data), objeto.quantidade, objeto.valor)));
+			})
+			.catch(erro => {
+
+				console.log(erro);
+				reject('Não foi possível obter as negociações da semana retrasada.');
+			});				
+		});
 	}	
 }
