@@ -4,12 +4,56 @@
 		"selected_items":
 		[
 			[
-				"Ne",
-				"Negociacao"
+				"negoci",
+				"negociacao"
 			],
 			[
 				"ne",
-				"negociacoesView\t(index.html)"
+				"negociacao"
+			],
+			[
+				"Negoc",
+				"NegociacaoService"
+			],
+			[
+				"negoc",
+				"negociacaoController"
+			],
+			[
+				"in",
+				"inverteOrdem\t(ListaNegociacoes.js)"
+			],
+			[
+				"v",
+				"volume"
+			],
+			[
+				"negociacao",
+				"negociacaoController\t(index.html)"
+			],
+			[
+				"ob",
+				"obterNegociacoes\t(NegociacaoService.js)"
+			],
+			[
+				"array",
+				"arrayAchatado"
+			],
+			[
+				"nego",
+				"negociacao"
+			],
+			[
+				"Negociacao",
+				"NegociacaoService\t(NegociacaoService.js)"
+			],
+			[
+				"ope",
+				"open(method, url)"
+			],
+			[
+				"Ne",
+				"Negociacao"
 			],
 			[
 				"Mens",
@@ -48,10 +92,6 @@
 				"getTime"
 			],
 			[
-				"Negoc",
-				"Negociacao\t(Negociacao.js)"
-			],
-			[
 				"va",
 				"valor\t(index.html)"
 			],
@@ -75,6 +115,86 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "aluraframe/client/js/app/controllers/NegociacaoController.js",
+			"settings":
+			{
+				"buffer_size": 2308,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/models/Mensagem.js",
+			"settings":
+			{
+				"buffer_size": 233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/services/NegociacaoService.js",
+			"settings":
+			{
+				"buffer_size": 2095,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/server/app/api/index.js",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/helpers/DateHelper.js",
+			"settings":
+			{
+				"buffer_size": 519,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/services/HttpService.js",
+			"settings":
+			{
+				"buffer_size": 1405,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/models/ListaNegociacoes.js",
+			"settings":
+			{
+				"buffer_size": 558,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/js/app/views/NegociacoesView.js",
+			"settings":
+			{
+				"buffer_size": 1306,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aluraframe/client/index.html",
+			"settings":
+			{
+				"buffer_size": 2285,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -83,10 +203,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 137.0,
-		"last_filter": "Package Control: inst",
+		"height": 203.0,
+		"last_filter": "Package Control: ins",
 		"selected_items":
 		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
 			[
 				"Package Control: inst",
 				"Package Control: Install Package"
@@ -106,14 +234,6 @@
 			[
 				"Package Control: remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
-			],
-			[
-				"Package Control: ins",
-				"Package Control: Install Package"
 			],
 			[
 				"Package Control: insta",
@@ -136,7 +256,7 @@
 				"Set Syntax: Ruby on Rails"
 			]
 		],
-		"width": 444.0
+		"width": 540.0
 	},
 	"console":
 	{
@@ -158,7 +278,17 @@
 	},
 	"expanded_folders":
 	[
-		"/C/alura/js_avancado_II"
+		"/C/alura/js_avancado_II",
+		"/C/alura/js_avancado_II/aluraframe",
+		"/C/alura/js_avancado_II/aluraframe/client",
+		"/C/alura/js_avancado_II/aluraframe/client/js",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app",
+		"/C/alura/js_avancado_II/aluraframe/client/js/app/helpers",
+		"/C/alura/js_avancado_II/aluraframe/server",
+		"/C/alura/js_avancado_II/aluraframe/server/app",
+		"/C/alura/js_avancado_II/aluraframe/server/app/api",
+		"/C/alura/js_avancado_II/aluraframe/server/app/routes",
+		"/C/alura/js_avancado_II/aluraframe/server/config"
 	],
 	"file_history":
 	[
@@ -248,8 +378,345 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "aluraframe/client/js/app/controllers/NegociacaoController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1643,
+								1643
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|32",
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"SL.30.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "aluraframe/client/js/app/models/Mensagem.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.24.region_keys":
+							[
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"sublime_linter.protected_regions"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "aluraframe/client/js/app/services/NegociacaoService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1777,
+								1777
+							]
+						],
+						"settings":
+						{
+							"SL.19.region_keys":
+							[
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|32",
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "aluraframe/server/app/api/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1600,
+								1600
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|32"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "aluraframe/client/js/app/helpers/DateHelper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.30.region_keys":
+							[
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"sublime_linter.protected_regions"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "aluraframe/client/js/app/services/HttpService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1248,
+								1248
+							]
+						],
+						"settings":
+						{
+							"SL.23.region_keys":
+							[
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|32",
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "aluraframe/client/js/app/models/ListaNegociacoes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"SL.21.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "aluraframe/client/js/app/views/NegociacoesView.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								577,
+								577
+							]
+						],
+						"settings":
+						{
+							"SL.22.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "aluraframe/client/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1036,
+								1036
+							]
+						],
+						"settings":
+						{
+							"SL.20.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.jshint.Gutter.source.js meta.function-call.method.js support.function.dom.js.Packages/SublimeLinter/gutter-themes/Default/pointer.png",
+								"SL.jshint.Highlights.|source.js meta.function-call.method.js support.function.dom.js|1316"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
